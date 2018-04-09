@@ -1,0 +1,13 @@
+.StarDefault { 
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px 10px 5px;
+    background-color: gray;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.StarSelected {
+    background-color: red;
+}
+

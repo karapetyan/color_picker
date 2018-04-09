@@ -1,0 +1,7 @@
+.Color {
+    width: 200px; /*can be in percentage also.*/
+    height: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+}
