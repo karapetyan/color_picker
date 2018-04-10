@@ -231,8 +231,8 @@ class Palette extends Component {
             <div className="Palette">
                 <Search onSearch={this.callBacks.onSearch} />
                 <AddColor onAddColor={this.callBacks.onAddColor} show={this.state.AddColor.show}/>
-                { colors.map((color, i) => 
-                  <Color key={i} state = { color } callBacks = { this.callBacks } onRemove = { this.callBacks.onRemove }/>
+                { colors.map((color) => 
+                  <Color key={color.id} state = { color } callBacks = { this.callBacks } onRemove = { this.callBacks.onRemove }/>
                 )}
             </div>
         )

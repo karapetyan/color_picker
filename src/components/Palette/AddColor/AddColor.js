@@ -7,7 +7,7 @@ const AddColor = ({onAddColor, show}) => {
     const submit = e => {
         e.preventDefault();
         onAddColor(_title.value, _color.value);
-        _title.value = 'Color title';
+        _title.value = '';
         _color.value='';
         _title.focus();
     }
@@ -15,8 +15,8 @@ const AddColor = ({onAddColor, show}) => {
     return (
         show ? 
         <form onSubmit={submit} >
-            <input ref={input => _title = input} type="text" defaultValue="Color title"/> 
-            <input ref={input => _color = input} type="color" defaultValue="Color name"/>
+            <input ref={input => _title = input} type="text" placeholder="Color title"/> 
+            <input ref={input => _color = input} type="color" />
             <button>Add</button>
         </form>
         : null

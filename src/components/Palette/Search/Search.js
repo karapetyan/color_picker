@@ -5,7 +5,7 @@ const Search = ({onSearch}) => {
     let _search
     return(
     <Debounce time="400" handler="onChange">
-        <input onChange={onSearch} />
+        <input placeholder="Search" onChange={onSearch} />
     </Debounce>
     )
 }
