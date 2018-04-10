@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AddColor = ({onAddColor}) => {
+const AddColor = ({onAddColor, show}) => {
 
     let _title, _color;
     
@@ -13,11 +13,13 @@ const AddColor = ({onAddColor}) => {
     }
 
     return (
+        show ? 
         <form onSubmit={submit} >
             <input ref={input => _title = input} type="text" defaultValue="Color title"/> 
             <input ref={input => _color = input} type="color" defaultValue="Color name"/>
             <button>Add</button>
         </form>
+        : null
     )
 }
 
